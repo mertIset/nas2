@@ -1,0 +1,471 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="683,4728" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="task" />
+      <Variable x:TypeArguments="x:String" Name="dringlichkeit" />
+      <Variable x:TypeArguments="x:String" Name="budget" />
+      <Variable x:TypeArguments="x:String" Name="branche" />
+      <Variable x:TypeArguments="x:String" Name="aktuelleSysteme" />
+      <Variable x:TypeArguments="x:String" Name="projektbeschreibung" />
+      <Variable x:TypeArguments="x:String" Name="telefonnummer" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="kontaktperson" />
+      <Variable x:TypeArguments="x:String" Name="firmenname" />
+      <Variable x:TypeArguments="x:Int32" Name="MaxTasks">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="5" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="TaskProcessed">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Name="HasTasks">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" Value="True" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="currentTaskID">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New DataTable]" Name="TaskList" />
+      <Variable x:TypeArguments="x:Int32" Name="TaskCount">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Username">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">18</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="CamundaURL">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://camunda25.f4.htw-berlin.de</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,4705" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="924f84f9-b7a2-4692-8442-bcf2b693936b">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,4465" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Text="[Username]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="ccc4c71d-5842-487f-933b-963e32037b27" ContentHash="XTkRjHe38kmBIMXxyfceDg" CvElementArea="262, 465, 388, 36" CvType="InputBox" DesignTimeRectangle="262, 518, 387, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control ng-empty ng-invalid ng-invalid-required ng-valid-parse ng-pristine ng-touched' placeholder='Username' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a368a774-a4eb-415e-9345-5f7a88d10aec" InformativeScreenshot="6cd2f5932f26b0716aed232bf945fb10.png" Reference="dVhC9RHBm0adKxdmW46Nnw/BJKRkpQrE0u4BqhKlxZwzw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Text="Htwberlin2025!" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="3f552cfe-d2d4-4377-b575-9f4277d7d9c5" ContentHash="ZPYsFRdkgk6RS2USniMp9w" CvElementArea="261, 566, 388, 35" CvType="InputBox" DesignTimeRectangle="262, 567, 387, 34" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="923ccf2a-bd09-4d15-8e86-18edd3e2253c" InformativeScreenshot="161b8b271f062816a43884bc2fbda793.png" Reference="dVhC9RHBm0adKxdmW46Nnw/OjE8P7KT20WbKiyjl5cC0g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="3f552cfe-d2d4-4377-b575-9f4277d7d9c5" ContentHash="QmOHkguYxkaLc9pFaHeALA" CvElementArea="260, 615, 390, 48" CvTextArea="430, 630, 49, 20" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="262, 616, 387, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="2fde1e5c-30a0-4d90-a946-60142e2b6d0c" InformativeScreenshot="9ccaf09addaddeb74dd1f6ef96a706a6.png" Reference="dVhC9RHBm0adKxdmW46Nnw/OYH4z9gpzEygAVeCl9m9Cg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="7a5b58da-11d6-4440-8906-4191596c17b4" ContentHash="Qz-ulQKdLEWTpABDTqGcOA" CvTextArea="214, 297, 166, 15" CvTextArgument="Filter Tasks 76" CvType="Text" DesignTimeRectangle="216, 294, 156, 20" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;view&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" Guid="a7886af2-e90f-4e57-a4e8-4db965c7c9e2" InformativeScreenshot="4b727624833c6a73734cd6e1b9cc4ce7.png" Reference="dVhC9RHBm0adKxdmW46Nnw/u48tzvmnzkKp9iNuG3Sahw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="72da27bc-222c-4b75-b795-e01a66000736" ContentHash="GMbiQetKa0aofOS_Xm4Mcg" CvTextArea="225, 875, 38, 13" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="217, 870, 212, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Name' tag='A' /&gt;" Guid="36217ec5-ab08-423e-86f8-a176ba9ff459" InformativeScreenshot="685bb858bddb9785096a57b0d1a7d348.png" Reference="dVhC9RHBm0adKxdmW46Nnw/VyLX0GK_RUqz5MXyVtgD1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'like'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Text="Vollständigkeit prüfen" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="7d61dd8f-3975-4c25-b959-b43ebccb56db" ContentHash="XcEoGRNqS0yYwBipORQcCQ" CvElementArea="264, 344, 166, 23" CvType="InputBox" DesignTimeRectangle="265, 345, 164, 22" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl parentname='inlineForm' tag='INPUT' type='text' class='form-control ng-pristine ng-valid ng-scope ng-empty ng-touched' aaname='' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="845e3380-2cd1-4b9b-8eb7-bc6597bc2faa" InformativeScreenshot="1ec7179f376b4a9b92ed4277a8e84195.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/oK60aE3aokKXK0ppKIzFSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="7d61dd8f-3975-4c25-b959-b43ebccb56db" CvTextArea="239, 348, 23, 13" CvTextArgument="like" CvType="Text" DesignTimeRectangle="240, 346, 22, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       like     ' parentname='search.name' tag='SPAN' type='' class='ng-binding ng-scope' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='like' /&gt;" Guid="0af08d34-fe4c-4b10-a7ce-3fb208f785ef" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" ContentHash="jfrbkRonE0uu7GeQ7O85sg" DesignTimeRectangle="388, 275, 12, 12" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" Guid="f0390e0b-cd48-4c1d-8918-24d9cd9b5a2b" InformativeScreenshot="454b251d17f7199694116782894bc42c.png" Reference="dVhC9RHBm0adKxdmW46Nnw/WSXWREB94EScXo7ubTw7qQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Vollständigkeit prüfen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="e1097af2-1971-465d-9d05-79167d4cb21b" ContentHash="UgJsxWS8I0C28BimJNbvQQ" CvTextArea="201, 378, 178, 20" CvTextArgument="Vollständigkeit prüfen" CvType="Text" DesignTimeRectangle="203, 375, 177, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                 Vollständigkeit prüfen               ' class='ng-binding' tag='A' /&gt;" Guid="4368b0a2-30b7-43ab-ba1a-4cb84eaff387" InformativeScreenshot="09d18e586914d516508c730164aabb7a.png" Reference="dVhC9RHBm0adKxdmW46Nnw/QpChe8wumEu1PIc3uaa4fw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Firmenname'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[firmenname]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="9ac025b2-489a-4655-9cfa-567e2b3071f2" ContentHash="BAwk9lCMz02SklZilKWlqA" CvElementArea="503, 544, 368, 35" CvType="InputBox" DesignTimeRectangle="503, 545, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='firmenname' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="35b93564-eb86-45ce-bc92-20a33c59ac8d" InformativeScreenshot="e8f95e74f0b8a3ab949823e7cd887da6.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/c8Rxaz6ylUW8rlqgwmuQCw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="9ac025b2-489a-4655-9cfa-567e2b3071f2" CvTextArea="502, 523, 85, 13" CvTextArgument="Firmenname" CvType="Text" DesignTimeRectangle="503, 520, 83, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Firmenname     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Firmenname' /&gt;" Guid="7b53cb52-4652-48f9-825f-756418bb9e89" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Kontaktperson'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[kontaktperson]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" ContentHash="7hemLimGPUiqxzAQcKAtyw" CvElementArea="502, 519, 370, 35" CvType="InputBox" DesignTimeRectangle="503, 519, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='kontaktperson' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="efb48f56-8862-4843-9bae-da30ca883970" InformativeScreenshot="97bfead2d4234d7c454ae2dab1a805f3.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/x5grH0I_-EukbJIMwYRjQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" CvTextArea="502, 497, 99, 16" CvTextArgument="Kontaktperson" CvType="Text" DesignTimeRectangle="503, 494, 98, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Kontaktperson     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Kontaktperson' /&gt;" Guid="bb3a0a0b-3a31-44b1-99a6-074b88107ded" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[email]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" ContentHash="1ZOOmf2cTEGVfxaQT6AKqw" CvElementArea="503, 592, 370, 35" CvType="InputBox" DesignTimeRectangle="503, 593, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='email' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ee7aa238-c056-4059-8cc7-e0548a474100" InformativeScreenshot="ee8aef28877698f7b6c7a1601c74b22e.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/vyCkv7pakUiQyDzzVL65ag" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" CvTextArea="502, 571, 39, 13" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="503, 568, 37, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Email     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Email' /&gt;" Guid="b7145866-b704-4d6e-a5af-9946682e2a3a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Telefonnummer'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[telefonnummer]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" ContentHash="kKU8723igkunacqg17A8XA" CvElementArea="502, 666, 370, 35" CvType="InputBox" DesignTimeRectangle="503, 667, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='telefonnummer' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="bee24a40-7c5e-47d5-9c4f-4638ccd4a180" InformativeScreenshot="8929fe91b520345450f6c54b1c1346ac.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/txojkzEnik2ji0rlihp5BA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="faffcbbf-4aba-47c1-bd0a-d0952b8996f9" CvTextArea="502, 645, 106, 13" CvTextArgument="Telefonnummer" CvType="Text" DesignTimeRectangle="503, 642, 104, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Telefonnummer     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Telefonnummer' /&gt;" Guid="394ab165-7e17-4cd8-9b7d-b909bc7064de" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Projektbeschreibung'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[projektbeschreibung]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" ContentHash="ZWhGd3PQEUWAN40fQFN5Fw" CvElementArea="503, 640, 369, 35" CvType="InputBox" DesignTimeRectangle="503, 641, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='projektbeschreibung' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7ba24438-126a-4a0c-a7d3-0164b445d9c4" InformativeScreenshot="7f9eaf7bdf7fd06f11df49f94d08e179.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/VZiYHTAyf0ehBjt8owYHbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" CvTextArea="501, 619, 140, 16" CvTextArgument="Projektbeschreibung" CvType="Text" DesignTimeRectangle="503, 616, 137, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Projektbeschreibung     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Projektbeschreibung' /&gt;" Guid="02cc20d4-e2cf-4ff5-867e-71a4556135ee" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Aktuelle Systeme'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[aktuelleSysteme]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" ContentHash="x-16m1yF6kmNt03vt0x-vA" CvElementArea="503, 714, 369, 35" CvType="InputBox" DesignTimeRectangle="503, 715, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='aktuellesysteme' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1c6d87c1-c8e8-4566-bd50-65f05ed0569d" InformativeScreenshot="a7f04317f40d2a012f41544f41c89aef.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/aCeyplj1NEmPUE-Ck-2mGA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" CvTextArea="502, 693, 117, 16" CvTextArgument="Aktuelle Systeme" CvType="Text" DesignTimeRectangle="503, 690, 115, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Aktuelle Systeme     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Aktuelle Systeme' /&gt;" Guid="7be2f5c1-4002-4a7d-9ea7-81188dd6bdad" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Branche'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[branche]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" ContentHash="kbU6un7SykerEo2wmGd5MQ" CvElementArea="503, 788, 369, 35" CvType="InputBox" DesignTimeRectangle="503, 789, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='branche' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="562b2ad7-21b0-4186-b84a-82ed0d584a9f" InformativeScreenshot="2e33f7c61b1892c37fe668feee410dbb.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/XVmPkg_saU-x1U-peLPlMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" CvTextArea="502, 767, 56, 13" CvTextArgument="Branche" CvType="Text" DesignTimeRectangle="503, 764, 55, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Branche     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Branche' /&gt;" Guid="075b20d5-ac8d-49c2-8cf8-a1aa639a596f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Budget'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,189" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" TextString="[budget]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" ContentHash="XzFy9ivtUUyPNdWDNzk9Kw" CvElementArea="502, 862, 370, 35" CvType="InputBox" DesignTimeRectangle="503, 863, 369, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='budget' tag='INPUT' type='text' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f8872909-c3a0-4e34-b72f-609de533b812" InformativeScreenshot="47652fa1df5f410d16c4b4ab48891ed4.png" IsResponsive="True" Reference="dVhC9RHBm0adKxdmW46Nnw/YF0bsved_kuB0bG_G5xsWA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="442a47df-f3ea-4385-a23f-68fa2c64e5ed" CvTextArea="502, 841, 49, 16" CvTextArgument="Budget" CvType="Text" DesignTimeRectangle="503, 838, 47, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='       Budget     ' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Budget' /&gt;" Guid="b7756f9a-5b82-4bdb-b201-86db429a3c8d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <If Condition="[Not String.IsNullOrWhiteSpace(firmenname) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(kontaktperson) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(email) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(telefonnummer) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(projektbeschreibung) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(aktuelleSysteme) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(branche) And &#xD;&#xA;Not String.IsNullOrWhiteSpace(budget)]" sap:VirtualizedContainerService.HintSize="418,908" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Complete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="7d7386aa-983a-478f-b1a2-5c3c0b54bbcc" ContentHash="_8F5fLKGAkKVF6f_B7aqig" CvElementArea="784, 985, 89, 31" CvTextArea="796, 996, 64, 17" CvTextArgument="Complete" CvType="Button" DesignTimeRectangle="785, 986, 87, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='       Complete     ' tag='BUTTON' type='submit' /&gt;" Guid="3807ad50-6e15-4f2e-8e87-48a0ca010d1f" InformativeScreenshot="ad5ed92db313a351d8aec74629985b0b.png" Reference="dVhC9RHBm0adKxdmW46Nnw/Y18Ie2TRNEqaNuwE8NPWPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,501" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sind alle Informationen…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="72bdcbe6-57a1-48ee-8d9c-2f92a733025b" ContentHash="dAlORxfr306EtUg1Ird1tg" CvElementArea="501, 457, 17, 17" CvType="CheckBox" DesignTimeRectangle="503, 459, 13, 13" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='form-control ng-untouched ng-valid ng-valid-cam-variable-type ng-not-empty ng-valid-parse ng-pristine' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="52b018c1-766e-4cf3-90b3-c723c9b4b154" InformativeScreenshot="ac0d14a8e996c4f07b4d5c03649e4a21.png" Reference="dVhC9RHBm0adKxdmW46Nnw/o4k_tdQ1bUKvEHtz1org9w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="72bdcbe6-57a1-48ee-8d9c-2f92a733025b" CvTextArea="502, 433, 240, 16" CvTextArgument="Sind alle Informationen vollständig?" CvType="Text" DesignTimeRectangle="503, 430, 238, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='       Sind alle Informationen vollständig?     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sind alle Informationen vollständig?' /&gt;" Guid="b8698240-d499-4563-add9-cd5fe5669099" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Complete(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="924f84f9-b7a2-4692-8442-bcf2b693936b" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="camunda25.f4.htw-berlin.de/camunda/app/tasklist/default" CVScreenId="f822db6d-8014-4596-bae6-1633460834c2" ContentHash="XZ2BNs2Sxk-fye7VTNOkUw" CvElementArea="784, 985, 89, 31" CvTextArea="796, 996, 64, 17" CvTextArgument="Complete" CvType="Button" DesignTimeRectangle="785, 986, 87, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='       Complete     ' tag='BUTTON' type='submit' /&gt;" Guid="dba07fac-0139-44c9-8894-835e5768a81c" InformativeScreenshot="074961f3458c09fc8c5c0da2c2221b7b.png" Reference="dVhC9RHBm0adKxdmW46Nnw/ToD5kWDE0UubdlzkrlA5yA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-7, 0, 910, 1047" BrowserType="Chrome" ContentHash="r6dxqMzF3ku4xIw8UibYgA" IconBase64="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" InformativeScreenshot="6564c6a249f8aad2c0988c94614155ae.jpg" Reference="dVhC9RHBm0adKxdmW46Nnw/ZAEuTa66Q0KYVJMOJJzeGg" Selector="&lt;html app='chrome.exe' title='Camunda Tasklist' /&gt;" Url="https://camunda25.f4.htw-berlin.de/camunda/app/tasklist/default/#/login" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
